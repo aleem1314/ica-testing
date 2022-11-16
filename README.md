@@ -90,7 +90,7 @@ cat ./data/regen-ica/config/genesis.json | jq -r '.app_state.genutil.gen_txs[0].
 echo '
 {
     "@type":"/cosmos.staking.v1beta1.MsgDelegate",
-    "delegator_address":"<add-your-ica-account-address-here>",
+    "delegator_address":"<ica-account-address-here>",
     "validator_address":"regenvaloper1qnk2n4nlkpw9xfqntladh74w6ujtulwnah3mns",
     "amount": {
         "denom": "uregen",
@@ -116,7 +116,7 @@ Example 2: Bank Send
 
 echo '{
     "@type":"/cosmos.bank.v1beta1.MsgSend",
-    "from_address":"<add-your-ica-account-address-here>",
+    "from_address":"<ica-account-address-here>",
     "to_address":"regen1d84j42rnfgq60sjxpzj4pgfu35mew34d7r65en",
     "amount": [
         {
@@ -141,7 +141,7 @@ Example 3: Testing not allowed message
 
 echo '{
     "@type":"/cosmos.staking.v1beta1.MsgUndelegate",
-    "delegator_address":"<add-your-ica-account-address-here>",
+    "delegator_address":"<ica-account-address-here>",
     "validator_address":"regenvaloper1qnk2n4nlkpw9xfqntladh74w6ujtulwnah3mns",
     "amount": [
         {
