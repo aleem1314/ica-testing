@@ -63,4 +63,4 @@ $BINARY collect-gentxs --home $CHAIN_DIR/$CHAINID
 
 
 # Update host chain genesis to allow x/bank/MsgSend ICA tx execution
-# sed -i -e 's/\"allow_messages\":.*/\"allow_messages\": [\"\/cosmos.bank.v1beta1.MsgSend\", \"\/cosmos.staking.v1beta1.MsgDelegate\"]/g' $CHAIN_DIR/$CHAINID_2/config/genesis.json
+sed -i -e 's/\"allow_messages\":.*/\"allow_messages\": [\"\/cosmos.bank.v1beta1.MsgSend\",\"\/cosmos.staking.v1beta1.MsgDelegate\"]/g' $CHAIN_DIR/$CHAINID/config/genesis.json

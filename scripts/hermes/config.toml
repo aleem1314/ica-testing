@@ -3,7 +3,7 @@
 
 # Specify the verbosity for the relayer logging output. Default: 'info'
 # Valid options are 'error', 'warn', 'info', 'debug', 'trace'.
-log_level = 'trace'
+log_level = 'info'
 
 
 # Specify the mode to be used by the relayer. [Required]
@@ -106,7 +106,7 @@ max_msg_num = 30
 max_tx_size = 2097152
 clock_drift = '5s'
 max_block_time = '10s'
-trusting_period = '50s'
+trusting_period = '14days'
 trust_threshold = { numerator = '1', denominator = '3' }
 address_type = { derivation = 'cosmos' }
 
@@ -127,6 +127,6 @@ max_msg_num = 30
 max_tx_size = 2097152
 clock_drift = '5s'
 max_block_time = '10s'
-trusting_period = '50s'
+trusting_period = '14days'
 trust_threshold = { numerator = '1', denominator = '3' }
 address_type = { derivation = 'cosmos' }
