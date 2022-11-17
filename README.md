@@ -143,12 +143,10 @@ echo '{
     "@type":"/cosmos.staking.v1beta1.MsgUndelegate",
     "delegator_address":"<ica-account-address-here>",
     "validator_address":"regenvaloper1qnk2n4nlkpw9xfqntladh74w6ujtulwnah3mns",
-    "amount": [
-        {
-            "denom": "uregen",
-            "amount": "10"
-        }
-    ]
+    "amount": {
+        "denom": "uregen",
+        "amount": "10"
+    }
 }' > undelegate.json
 
 akash tx icaauth submit undelegate.json --connection-id connection-0 --from $WALLET_1 --chain-id akash-ica --home ./data/akash-ica --node tcp://localhost:26656 --keyring-backend test -y
