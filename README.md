@@ -48,7 +48,7 @@ make start-hermes
 export WALLET_1=$(akash keys show wallet1 -a --keyring-backend test --home ./data/akash-ica) && echo $WALLET_1;
 export WALLET_2=$(akash keys show wallet2 -a --keyring-backend test --home ./data/akash-ica) && echo $WALLET_2;
 export WALLET_3=$(regen keys show wallet3 -a --keyring-backend test --home ./data/regen-ica) && echo $WALLET_3;
-export WALLET_4=$(regen keys show wallet4 -a --keyring-backend test --home ./data/regen-ica) && echo $WALLET_1;
+export WALLET_4=$(regen keys show wallet4 -a --keyring-backend test --home ./data/regen-ica) && echo $WALLET_4;
 ```
 
 ### Registering an Interchain Account via IBC
